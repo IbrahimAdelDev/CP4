@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <iostream>
 #include <math.h>
 // #include <string>
@@ -7,8 +8,9 @@
 
 void solve(){
     char a[1000];
-    while(scanf("%[A-Z0-9 =]", a)!=EOF){
+    while(scanf("%[a-zA-Z0-9 =]", a)!=EOF){
         printf("%s\n", a);
+        if(scanf("\n")==EOF) break; // if(getchar()==EOF) break;
     }
 }
 
